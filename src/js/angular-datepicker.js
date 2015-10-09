@@ -588,7 +588,7 @@
         });
 
         //create the calendar holder
-        thisInput.after($compile(angular.element(htmlTemplate))($scope));
+        element.append($compile(angular.element(htmlTemplate))($scope));
         //get the calendar as element
         theCalendar = element[0].querySelector('._720kb-datepicker-calendar');
 
